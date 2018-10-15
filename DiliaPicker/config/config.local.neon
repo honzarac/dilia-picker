@@ -1,0 +1,13 @@
+parameters:
+
+
+dbal:
+    connectionTz: auto-offset
+    charset: 'utf8mb4'
+    driver: mysqli
+    host: localhost
+    database: dilia
+    username: root
+    password:
+
+    debug: true
