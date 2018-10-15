@@ -12,8 +12,21 @@ final class HomepagePresenter extends Nette\Application\UI\Presenter
     /** @var DiliaFacade @inject */
     public $diliaFacade;
 
-    public function actionDefault()
+    public function renderDefault()
     {
-        $this->sendJson(['data' => $this->diliaFacade->refreshList()]);
+
+    }
+
+    public function handleRefresh($page)
+    {
+        $results = $this->diliaFacade->refreshList($page);
+
+        $this->template->refreshProgress = ($page/322)*100;
+
+        if($results !== 0) {
+            $this->template->redirectUrl = $this->link('//refresh!', ['page' => $page+1]);
+        } else {
+            $this->redirect('this');
+        }
     }
 }

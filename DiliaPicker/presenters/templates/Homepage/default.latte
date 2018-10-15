@@ -40,9 +40,22 @@
 	<div class="col-3">
 		<div class="card">
 			<div class="card-body">
-				<a href="http://websitedesigntamilnadu.com" class="btn btn-primary float-right">Načíst</a>
+				<a n:href="refresh! 1" class="btn btn-primary float-right">Načíst</a>
 				<h5 class="card-title">Načtení titulů</h5>
 				<h6 class="card-subtitle mb-2 text-muted">Aktualizuj výpis z dilie</h6>
+				{ifset $refreshProgress}
+					<div class="progress">
+						<div class="progress-bar" role="progressbar" style="width: {$refreshProgress|number:0}%;" aria-valuenow="{$refreshProgress|number:0}"
+							 aria-valuemin="0" aria-valuemax="100">
+							{$refreshProgress|number:0}%
+						</div>
+					</div>
+					{ifset $redirectUrl}
+						<script>
+							window.location.href = {$redirectUrl};
+						</script>
+					{/ifset}
+				{/ifset}
 			</div>
 		</div>
 	</div>
