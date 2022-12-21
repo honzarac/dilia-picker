@@ -21,7 +21,9 @@
 		"latte/latte": "^3.0",
 		"tracy/tracy": "^2.9",
 		"nextras/dbal": "^4.0",
-		"paquettg/php-html-parser": "^1.7"
+		"1foru/php-html-parser": "^1.0",
+		"ext-couchbase": "^4.0",
+		"couchbase/couchbase": "^4.0"
 	},
 	"require-dev": {
 		"nette/tester": "^2.0"

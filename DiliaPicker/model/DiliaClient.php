@@ -2,9 +2,11 @@
 
 namespace DiliaPicker\Model;
 
+use DiliaPicker\Exceptions\UnexpectedDiliaResponseException;
+
 class DiliaClient
 {
-    const BASE_URL = 'http://www.dilia.cz/';
+    const BASE_URL = 'https://www.dilia.cz/';
 
     public function loadSynopsePage($page = 1): string
     {
@@ -13,29 +15,40 @@ class DiliaClient
         );
         return $this->extractContent(
             $content,
-            "<p>My cíp, dějiny niť trošek, do dá a podřízenému. Ah věk také lichvu curych</p>-->",
-            "<div class=\"catalog-pagination\">"
+            'My cíp, dějiny niť trošek, do dá a podřízenému. Ah věk také lichvu curych</p>-->',
+            '<div class="catalog-pagination">'
         );
     }
 
     protected function extractContent($content, $begin, $end)
     {
-        $content = explode(
-            $begin,
-            $content
+        $matchResult = preg_match(
+            sprintf('@%s(.*)%s@ms', preg_quote($begin), preg_quote($end)),
+            $content,
+            $matches
         );
-        $content = $content[1];
-        $content = explode($end, $content);
-        return $content[0];
+        if ($matchResult === false || $matchResult === 0) {
+            throw new UnexpectedDiliaResponseException('Nepodařilo se najít content v dilia response');
+        }
+        return $matches[1];
     }
 
     private function loadPage($url): string
     {
-         return file_get_contents($url);
+//         return file_get_contents(
+//             $url,
+//             false,
+//             stream_context_create([
+//                 "ssl" => [
+//                     'verify_peer' => false,
+//                     'verify_peer_name' => false,
+//                 ],
+//             ])
+//         );
 //        $filename = __DIR__ . '/response-'.md5($url).'.html';
 //
 //        if (is_file($filename)) {
-//            return file_get_contents($filename);
+        return file_get_contents(__DIR__ . '/../../data/test.html');
 //        } else {
 //            $content = file_get_contents($url);
 //            file_put_contents(

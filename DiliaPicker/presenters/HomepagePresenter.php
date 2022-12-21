@@ -2,6 +2,8 @@
 
 namespace DiliaPicker\Presenters;
 
+use Couchbase\Cluster;
+use Couchbase\ClusterOptions;
 use DiliaPicker\Model\DiliaFacade;
 use Nette;
 
@@ -14,6 +16,16 @@ final class HomepagePresenter extends Nette\Application\UI\Presenter
 
     public function renderDefault()
     {
+
+        $connectionString = "couchbase://localhost";
+        $options = new ClusterOptions();
+
+        $options->credentials("root", "password");
+        $cluster = new Cluster($connectionString, $options);
+
+        $bucket = $cluster->bucket('synopses');
+
+        dumpe($bucket->collections());
 
     }
 

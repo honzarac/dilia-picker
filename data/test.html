@@ -1,0 +1,570 @@
+
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DILIA</title>
+    <meta name="author" content="DILIA, divadelní, literární, audiovizuální agentura, zapsaný spolek" />
+    <meta name="description" content="DILIA, divadelní, literární, audiovizuální agentura je občanské sdružení autorů a dalších nositelů autorských práv. " />
+    <link rel="shortcut icon" href="/favicon.ico">
+    <!-- Stylesheets -->
+    <link href="/templates/dilia/css/bootstrap.min.css?A=2" rel="stylesheet" media="screen">
+    <link href="/templates/dilia/css/dilia.css?A=0" rel="stylesheet" media="screen">
+    <link href="/templates/dilia/css/print.css?A=4" rel="stylesheet" media="print">
+    <!--Fonts-->
+    <script src="https://use.typekit.net/din6nuk.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    <link rel="stylesheet" href="/templates/dilia/fonts/lt-icons-regular.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#003771">
+    <meta name="msapplication-TileColor" content="#003771">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="">
+<div class="row row-offcanvas row-offcanvas-right">
+    <div class="container">
+        <!--HEADER-->
+        <div id="header" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <div class="pull-right visible-xs">
+                <button type="button" class="navbar-toggle btn" data-toggle="offcanvas">menu <span class="lt-menuright"></span></button>
+            </div>
+            <div class="brand">
+                <div class="logo">
+                    <a href="/">DILIA </a>
+                </div>
+                <a href="/">divadelní, literární, audiovizuální&nbsp;agentura, z.s.</a>
+            </div>
+            <div class="header-icons">
+                <a href="https://www.facebook.com/Agentura-Dilia-114511768652092/"><i class="fa fa-facebook-official"></i></a>
+                <a href="JavaScript:window.print();"><span class="lt-printer"></span></a>
+                <a href="/kontakty"><span class="lt-phone"></span></a>
+                <a href="/newsletters" title="Chcete odebírat novinky?"><span class="newsletter-icon"></span></a>
+                <a href="http://www.dilia.eu" title="Dilia.eu"><span class="en-icon"></span></a>
+                <a href="https://portal.dilia.cz/DiliaPortal/Login.aspx?typ=choose" class="portal-login"><span class="lt lt-person"></span>&nbsp;&nbsp;Portál</a>
+
+
+                <a href="#" style="display: none;"><span class="lang-switch"></span></a>
+            </div>
+
+            <form class="navbar-form visible-lg visible-md visible-sm" role="search" enctype="application/x-www-form-urlencoded" method="post" action="/hledat">
+                <div class="form-group">
+                    <input type="text" name="search_query" id="search_query" class="form-control" placeholder="Zadejte hledaný výraz">
+                </div>
+                <button type="submit" class="btn" name="search" id="search">Hledat</button>
+            </form>
+        </div>
+        <!--/HEADER-->
+
+        <!--NAVIGATION-->
+        <div id="sidebar" class="col-lg-4 col-md-4 col-sm-3 col-xs-12 sidebar-offcanvas" role="navigation">
+
+            <form id="basic_search" enctype="application/x-www-form-urlencoded" method="post" action="/hledat" class="navbar-form visible-xs" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control"  id="search_query" name="search_query" placeholder="Zadejte hledaný výraz" value="Hledat...">
+                    <button type="submit" class="btn" id="search" name="search">Hledat</button>
+                </div>
+            </form>
+
+
+            <ul id="navigace" class="main-nav nav nav-stacked" data-spy="affix" data-offset-top="100">
+                <li class="back-to-home">
+                    <a href="/"><span class="lt-menuright"></span>Zpět na úvod<br /></a>
+                </li>
+                <li >
+                    <a href="/index.php/agentura"><span class="lt-menuright"></span><strong>Agentura</strong></a>
+                </li>
+                <li >
+                    <a href="/15-divadelni-agentura"><span class="lt-menuright"></span>Divadlo</a>
+                </li>
+                <li >
+                    <a href="/18-hudebni-agentura"><span class="lt-menuright"></span>Hudba</a>
+                </li>
+                <li >
+                    <a href="/17-literarni-agentura"><span class="lt-menuright"></span>Literatura</a>
+                </li>
+                <li >
+                    <a href="/16-medialni-agentura"><span class="lt-menuright"></span>Média</a>
+                </li>
+                <br />
+                <li  >
+                    <a href="/kolektivni-sprava"><span class="lt-menuright"></span><strong>Kolektivní správa</strong></a>
+                </li>
+
+                <li >
+                    <a href="/21-kolektivni-sprava-autori"><span class="lt-menuright"></span>Pro autory</a>
+                </li>
+                <li >
+                    <a href="/20-kolektivni-sprava-nakladateleee"><span class="lt-menuright"></span>Pro nakladatele</a>
+                </li>
+                <li >
+                    <a href="/19-kolektivni-sprava-uzivatele"><span class="lt-menuright"></span>Pro uživatele</a>
+                </li>
+                <br />
+                <li>
+                    <a href="/synopse-her"><span class="lt-menuright"></span><strong>Katalog</strong></a>
+                </li>
+                <li >
+                    <a href="/zastupovani-autori"><span class="lt-menuright"></span>Autoři</a>
+                </li>
+                <li class='active'>
+                    <a href="/synopse-her"><span class="lt-menuright"></span>Díla</a>
+                </li>
+                <br />
+                <li >
+                    <a href="/index.php/o-nas"><span class="lt-menuright"></span>O nás</a>
+                </li>
+                <li >
+                    <a href="/index.php/novinky"><span class="lt-menuright"></span>Novinky</a>
+                </li>
+                <li >
+                    <a href="/index.php/ke-stazeni"><span class="lt-menuright"></span>Ke stažení</a>
+                </li>
+                <li >
+                    <a href="/index.php/kontakty"><span class="lt-menuright"></span>Kontakty</a>
+                </li>
+            </ul>
+
+        </div>
+        <!--/NAVIGATION-->
+
+        <!--CONTENT-->
+        <div id="content" class="col-lg-8 col-md-8 col-sm-9 col-xs-12">
+            <div class="row">
+                <div class="col-lg-12">
+
+
+
+                    <div id="system-message-container">
+                    </div>
+
+
+
+
+
+
+
+
+
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="breadcrumb"><a href="/">Dilia.cz</a> —&nbsp; <a href="/synopse-her">Katalog  —&nbsp; divadlo</a></div>
+                        <h1>KATALOG</h1>
+                        <div class="catalog">
+                            <div class="catalog-directory row">
+                                <a class="col-lg-6 col-md-6 col-sm-6 col-xs-12" href="/zastupovani-autori">
+                                    <img class="img-check-icon" src="/templates/dilia/images/check-0-icon.svg" alt="">
+                                    <img src="/templates/dilia/images/zast-autori-icon.svg" alt="">
+                                    <span class="">Autoři</span>
+                                </a>
+                                <a class="col-lg-6 col-md-6 col-sm-6 col-xs-12" href="/synopse-her">
+                                    <img class="img-check-icon" src="/templates/dilia/images/check-1-icon.svg" alt="">
+                                    <img src="/templates/dilia/images/dila-icon.svg" alt="">
+                                    <span class="">Díla</span>
+                                </a>
+                            </div>
+
+                            <ul class="nav nav-tabs">
+                                <li role="presentation" class="active"><a href="/synopse-her"><img src="/templates/dilia/images/divadlo-icon.svg" alt="">Divadlo</a></li>
+                                <li role="presentation"><a href="/hudebni-materialy"><img src="/templates/dilia/images/hudba-icon.svg" alt="">Hudba</a></li>
+                                <li role="presentation"><a href="/literarni-katalog"><img src="/templates/dilia/images/literatura-icon.svg" alt="">Literatura</a></li>
+                                <!--          <li role="presentation"><a href="#"><img src="/templates/dilia/images/media-icon.svg" alt="">Média</a></li>-->
+                            </ul>
+
+                            <div class="catalog-filter">
+                                <form id="synopsis_filter" method="get" action="/synopse-her" class="form-inline">
+                                    <div class="form-group">
+                                        <label class="sr-only" for="">Název díla</label>
+                                        <input type="text" name="title_name" id="" placeholder="Název díla" class="form-control col-lg-4 col-md-4 col-sm-4"
+                                               value="">
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="">Původní název díla</label>
+                                        <input type="text" name="orig" id="" placeholder="Původní název díla" class="form-control col-lg-4 col-md-4 col-sm-4"
+                                               value="">
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="">Autor / překladatel</label>
+                                        <input type="text" name="autor" id="" placeholder="Autor / překladatel" class="form-control col-lg-4 col-md-4 col-sm-4"
+                                               value="">
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="">Obsazení</label>
+                                        <input type="text" name="casting" id="" placeholder="Obsazení" class="form-control col-lg-4 col-md-4 col-sm-4"
+                                               value="">
+
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="">Rubrika</label>
+                                        <select name="rubric" id="" class="form-control col-lg-4 col-md-4 col-sm-4" id="" placeholder="Rubrika">
+                                            <option value="" label="Vše"  selected="selected" >Vše</option>
+                                            <option value="domestic" label="České" >České</option>
+                                            <option value="foreign" label="Zahraniční" >Zahraniční</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group">
+                                        <select name='genre' id='genre' class="form-control col-lg-4 col-md-4 col-sm-4" placeholder="Žánr"><option value='all' >Žánr</option><option value='činohra' >činohra</option><option value='muzikál' >muzikál</option><option value='komedie' >komedie</option><option value='hudební komedie' >hudební komedie</option><option value='pohádka' >pohádka</option><option value='hudební pohádka' >hudební pohádka</option><option value='monodrama' >monodrama</option><option value='drama' >drama</option><option value='aktovka' >aktovka</option><option value='loutková hra' >loutková hra</option><option value='rozhlasová hra' >rozhlasová hra</option><option value='fraška' >fraška</option><option value='další' >další</option></select>                </div>
+
+                                    <div class="form-group">
+                                        <label class="sr-only" for="">Třídit dlew</label>
+
+                                        <select name="order_by" placeholder=" Třídit dle"  class="form-control" >
+                                            <option value="" label="Třídit dle">Třídit dle</option>
+                                            <option value="main__title_asc" label="Název díla  A-Z" >Název díla  A-Z</option>
+                                            <option value="main__title_desc" label="Název díla  Z-A" >Název díla  Z-A</option>
+                                            <option value="main__authors_asc" label="Jména autora  A-Z">Jména autora</option>
+                                            <option value="main__authors_desc" label="Jména autora  Z-A">Jména autora</option>
+
+                                            <option value="main__datetime_desc" label="Data publikace  (od nejnovější)" >Data publikace</option>
+                                            <option value="main__datetime_asc" label="Data publikace (od nejstarší)" >Data publikace</option>
+                                            <option value="main__title_orig_asc" label="Orig. názvu A-Z" >Orig. názvu</option>
+                                            <option value="main__title_orig_asc" label="Orig. názvu Z-A" >Orig. názvu</option>
+                                        </select>
+
+                                    </div>
+
+                                    <div class="checkbox">
+                                        <label>
+                                            <input type="checkbox" name="translated" id="translated" > Pouze synopse nepřeložených her
+                                        </label>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <input type="hidden" name="filter" id="filter" value="Filtruj" />
+                                        <input type="hidden" name="letter" id="letter" value="" />
+                                        <button type="submit" class="btn btn-default catalog-btn">Filtrovat</button>
+                                </form>
+                            </div>
+
+
+
+
+                        </div>
+                        <div class="catalog-alphabet">
+                            <ul class="pagination">
+                                <li><a href="/synopse-her">Vše</a></li>
+                                <li><a href="/synopse-her?sorting=alphabet&letter=num">#</a></li>
+                                <li ><a href="/synopse-her?sorting=alphabet&letter=A&autor=&orig=&genre=&casting=&order_by=&rubric=&filter=">A</a></li>
+                                <li ><a href="/synopse-her?sorting=alphabet&letter=B&autor=&orig=&genre=&casting=&order_by=&rubric=&filter=">B</a></li>
+                                <li ><a href="/synopse-her?sorting=alphabet&letter=C&autor=&orig=&genre=&casting=&order_by=&rubric=&filter=">C</a></li>
+                                <li ><a href="/synopse-her?sorting=alphabet&letter=D&autor=&orig=&genre=&casting=&order_by=&rubric=&filter=">D</a></li>
+                                <li ><a href="/synopse-her?sorting=alphabet&letter=E&autor=&orig=&genre=&casting=&order_by=&rubric=&filter=">E</a></li>
+                                <li ><a href="/synopse-her?sorting=alphabet&letter=F&autor=&orig=&genre=&casting=&order_by=&rubric=&filter=">F</a></li>
+                                <li ><a href="/synopse-her?sorting=alphabet&letter=G&autor=&orig=&genre=&casting=&order_by=&rubric=&filter=">G</a></li>
+                                <li ><a href="/synopse-her?sorting=alphabet&letter=H&autor=&orig=&genre=&casting=&order_by=&rubric=&filter=">H</a></li>
+                                <li ><a href="/synopse-her?sorting=alphabet&letter=CH&autor=&orig=&genre=&casting=&order_by=&rubric=&filter=">CH</a></li>
+                                <li ><a href="/synopse-her?sorting=alphabet&letter=I&autor=&orig=&genre=&casting=&order_by=&rubric=&filter=">I</a></li>
+                                <li ><a href="/synopse-her?sorting=alphabet&letter=J&autor=&orig=&genre=&casting=&order_by=&rubric=&filter=">J</a></li>
+                                <li ><a href="/synopse-her?sorting=alphabet&letter=K&autor=&orig=&genre=&casting=&order_by=&rubric=&filter=">K</a></li>
+                                <li ><a href="/synopse-her?sorting=alphabet&letter=L&autor=&orig=&genre=&casting=&order_by=&rubric=&filter=">L</a></li>
+                                <li ><a href="/synopse-her?sorting=alphabet&letter=M&autor=&orig=&genre=&casting=&order_by=&rubric=&filter=">M</a></li>
+                                <li ><a href="/synopse-her?sorting=alphabet&letter=N&autor=&orig=&genre=&casting=&order_by=&rubric=&filter=">N</a></li>
+                                <li ><a href="/synopse-her?sorting=alphabet&letter=O&autor=&orig=&genre=&casting=&order_by=&rubric=&filter=">O</a></li>
+                                <li ><a href="/synopse-her?sorting=alphabet&letter=P&autor=&orig=&genre=&casting=&order_by=&rubric=&filter=">P</a></li>
+                                <li ><a href="/synopse-her?sorting=alphabet&letter=Q&autor=&orig=&genre=&casting=&order_by=&rubric=&filter=">Q</a></li>
+                                <li ><a href="/synopse-her?sorting=alphabet&letter=R&autor=&orig=&genre=&casting=&order_by=&rubric=&filter=">R</a></li>
+                                <li ><a href="/synopse-her?sorting=alphabet&letter=S&autor=&orig=&genre=&casting=&order_by=&rubric=&filter=">S</a></li>
+                                <li ><a href="/synopse-her?sorting=alphabet&letter=T&autor=&orig=&genre=&casting=&order_by=&rubric=&filter=">T</a></li>
+                                <li ><a href="/synopse-her?sorting=alphabet&letter=U&autor=&orig=&genre=&casting=&order_by=&rubric=&filter=">U</a></li>
+                                <li ><a href="/synopse-her?sorting=alphabet&letter=V&autor=&orig=&genre=&casting=&order_by=&rubric=&filter=">V</a></li>
+                                <li ><a href="/synopse-her?sorting=alphabet&letter=W&autor=&orig=&genre=&casting=&order_by=&rubric=&filter=">W</a></li>
+                                <li ><a href="/synopse-her?sorting=alphabet&letter=X&autor=&orig=&genre=&casting=&order_by=&rubric=&filter=">X</a></li>
+                                <li ><a href="/synopse-her?sorting=alphabet&letter=Y&autor=&orig=&genre=&casting=&order_by=&rubric=&filter=">Y</a></li>
+                                <li ><a href="/synopse-her?sorting=alphabet&letter=Z&autor=&orig=&genre=&casting=&order_by=&rubric=&filter=">Z</a></li>
+                            </ul>
+                        </div>
+                        <br />     <h1>Díla - divadlo</h1>
+
+                        <p>Zde naleznete synopse přeložených her.</p>
+
+
+
+                        <!--                        <p>My cíp, dějiny niť trošek, do dá a podřízenému. Ah věk také lichvu curych</p>-->
+
+                        <div class="catalog-listing row">
+
+                            <div class="synopsis-thumb col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <a href="/index.php/component/k2/item/16253-hostina-bohů">
+                                    <h2 class="synopsis-title"> HOSTINA BOHŮ </h2></a>
+                                <p class="author"><a href='/index.php/component/k2/item/14655-koukal-jiri'>Jiří Koukal</a></p>
+
+
+                                <p class="genre">městská slavnost</p>
+
+
+                                <p>variabilní (celkový počet účinkujících, včetně dvou členů obsluhy horkovzdušných balonů a šesti členů – chrličů ohně, je podle scénáře 363 postav a 17 koní)</p>
+
+
+                            </div>
+                            <div class="synopsis-thumb col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <a href="/index.php/component/k2/item/16323-small-town-boy">
+                                    <h2 class="synopsis-title"> SMALL TOWN BOY </h2></a>
+                                <p class="author"><a href='/index.php/component/k2/item/166-richter-falk'>Falk Richter</a></p>
+
+
+                                <p class="genre">činohra</p>
+
+
+
+                                <p class="translate">Překlad: <a href='/index.php/component/k2/item/396-eliasova-helena'>Helena Singh Eliášová</a></p>
+                                <p>4 muži, 1 žena (variabilní)</p>
+
+
+                            </div>
+                            <div class="synopsis-thumb col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <a href="/index.php/component/k2/item/10026-a-za-tracym-tygr">
+                                    <h2 class="synopsis-title">...A ZA TRACYM TYGR </h2></a>
+                                <p class="author"><a href='/index.php/component/k2/item/5474-kracik-vladislav'>Vladislav Kracík</a></p>
+
+
+
+                                <p>8 herců, z toho minimálně 2 ženy</p>
+
+
+                            </div>
+                            <div class="synopsis-thumb col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <a href="/index.php/component/k2/item/13140-nechtena-utecha">
+                                    <h2 class="synopsis-title">(NE)CHTĚNÁ ÚTĚCHA </h2></a>
+                                <p class="author"><a href='/index.php/component/k2/item/13139-volankova-katerina'>Kateřina Volánková</a></p>
+
+
+
+                                <p>4 ženy, 1 muž</p>
+
+
+                            </div>
+                            <div class="synopsis-thumb col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <a href="/index.php/component/k2/item/11764-#hashtag">
+                                    <h2 class="synopsis-title">#HASHTAG </h2></a>
+                                <p class="author"><a href='/index.php/component/k2/item/5466-brezinova-tereza'>Tereza Březinová</a></p>
+
+
+
+                                <p>8 mužů, 4 ženy</p>
+
+
+                            </div>
+                            <div class="synopsis-thumb col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <a href="/index.php/component/k2/item/6286-1-1-3-jeden-a-jedna-jsou-tri">
+                                    <h2 class="synopsis-title">1 + 1 = 3 (Jeden a jedna jsou tři) (Run For Your Wife, 1993)</h2></a>
+                                <p class="author"><a href='/index.php/component/k2/item/53-cooney-ray'>Ray Cooney</a></p>
+
+
+                                <p class="genre">komedie</p>
+
+
+
+                                <p class="translate">Překlad: <a href='/index.php/component/k2/item/936-hodek-bretislav'>Břetislav Hodek</a></p>
+                                <p>6 mužů, 3 ženy</p>
+
+
+                            </div>
+                            <div class="synopsis-thumb col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <a href="/index.php/component/k2/item/11653-10-out-of-12">
+                                    <h2 class="synopsis-title">10 OUT OF 12 (10 Out of 12)</h2></a>
+                                <p class="author"><a href='/index.php/component/k2/item/11652-washburn-anne'>Anne Washburn</a></p>
+
+
+                                <p class="genre">Komedie</p>
+
+
+
+                                <p class="translate">Překlad: <a href='/index.php/component/k2/item/4740-neprelozeno'> Nepřeloženo</a></p>
+                                <p>5 mužů, 2 ženy</p>
+
+
+                            </div>
+                            <div class="synopsis-thumb col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <a href="/index.php/component/k2/item/14877-100-songu">
+                                    <h2 class="synopsis-title">100 SONGŮ (100 Songs)</h2></a>
+                                <p class="author"><a href='/index.php/component/k2/item/204-schimmelpfennig-roland'>Roland Schimmelpfennig</a></p>
+
+
+                                <p class="genre">činohra</p>
+
+
+
+                                <p class="translate">Překlad: <a href='/index.php/component/k2/item/443-sloukova-jana'>Jana Slouková</a></p>
+                                <p>variabilní </p>
+
+
+                            </div>
+                            <div class="synopsis-thumb col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <a href="/index.php/component/k2/item/11806-14-hrabe-gurney">
+                                    <h2 class="synopsis-title">14. HRABĚ GURNEY (The Rulling Class)</h2></a>
+                                <p class="author"><a href='/index.php/component/k2/item/200-barnes-peter'>Peter Barnes</a></p>
+
+
+                                <p class="genre">Komedie</p>
+
+
+
+                                <p class="translate">Překlad: <a href='/index.php/component/k2/item/4841-ornest-ota'>Ota Ornest</a></p>
+                                <p>17 mužů, 3 ženy</p>
+
+
+                            </div>
+                            <div class="synopsis-thumb col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                                <a href="/component/k2/item/11541-1913">
+                                    <h2 class="synopsis-title">1913 </h2></a>
+                                <p class="author"><a href='/index.php/component/k2/item/11540-illies-florian'>Florian Illies</a>, <a href='/index.php/component/k2/item/9979-novakova-marie'>Marie Nováková</a>, <a href='/index.php/component/k2/item/9978-kubak-ivo-kristian'>Ivo Kristián Kubák</a></p>
+
+
+                                <p class="genre">dramatizace</p>
+
+
+                                <p>5 – 7 mužů, 3 ženy</p>
+
+
+                            </div>
+
+
+                        </div>
+
+                        <div class="catalog-pagination">
+                            <ul class="pagination">
+                                <li>
+                                    <a href="/synopse-her?page=1" aria-label="Previous">
+                                        <span aria-hidden="true" class="lt-menuleft"></span>
+                                    </a>
+                                </li>
+                                <li>
+
+                                <li class="active"><span class="active">1</span></li>
+                                <li><a href="/synopse-her?page=2">2</a></li>
+                                <li><a href="/synopse-her?page=3">3</a></li>
+                                <li><a href="/synopse-her?page=4">4</a></li>
+                                <li><a href="/synopse-her?page=5">5</a></li>
+                                <li><a href="/synopse-her?page=6">6</a></li>
+                                <li><a href="/synopse-her?page=7">7</a></li>
+                                <li><a href="/synopse-her?page=8">8</a></li>
+                                <li><a href="/synopse-her?page=9">9</a></li>
+                                <li><a href="/synopse-her?page=10">10</a></li>
+
+                                </li>
+                                <li>
+                                    <a href="/synopse-her?page=2" aria-label="Next">
+                                        <span aria-hidden="true" class="lt-menuright"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            </div>
+        </div>
+
+        <br />
+
+
+
+        <!--FOOTER-->
+        <div id="footer">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h4>DILIA, divadelní, literární, audiovizuální agentura, z.s.</h4>
+                    <p><small>Krátkého&nbsp;143/1, 190 00 Praha 9 – spolek zapsaný u&nbsp;Městského soudu v&nbsp;Praze, oddíl&nbsp;L, vložka&nbsp;7695 – IČ:&nbsp;65401875, DIČ:&nbsp;CZ65401875</small></p>
+                    <!--<hr />
+                        <h4>Kontakty</h4>
+                        <a href="/kontakty">DILIA</a>&nbsp;– <a href="/kontakty/?p=divadelni">Divadelní oddělení</a>&nbsp;– <a href="/kontakty/?p=hudebni">Hudební oddělení</a>&nbsp;– <a href="/kontakty/?p=literarni">Literární oddělení</a>&nbsp;– <a href="/kontakty/?p=medialni">Mediální oddělení</a>&nbsp;– <a href="/kontakty/?p=kolektivni-sprava">Kolektivní správa</a>&nbsp;– <a href="/kontakty/?p=ostatni">Ostatní</a>-->
+                    <br /><br /><br />
+                </div>
+            </div>
+        </div>
+        <!--/FOOTER-->
+
+    </div><!--/CONTENT-->
+
+</div> <!-- /.container -->
+
+
+<!--FOOTER-->
+<!--<div id="footer">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<div class="row">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 col-lg-offset-4 col-md-offset-4 col-sm-offset-4">
+<h4>DILIA, divadelní, literární, audiovizuální agentura, z.s.</h4>
+<p>Krátkého&nbsp;1, 190 03 Praha 9</p>
+<small>spolek zapsaný u&nbsp;Městského soudu v&nbsp;Praze, oddíl&nbsp;L, vložka&nbsp;7695<br />
+IČ:&nbsp;65401875, DIČ:&nbsp;CZ65401875</small>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12 col-lg-offset-1 col-md-offset-1 col-sm-offset-1">
+<h4>Kontakty</h4>
+<a href="/kontakty">DILIA</a><br />
+<a href="/kontakty/?p=divadelni">Divadelní oddělení</a><br />
+<a href="/kontakty/?p=hudebni">Hudební oddělení</a><br />
+<a href="/kontakty/?p=literarni">Literární oddělení</a><br />
+<a href="/kontakty/?p=medialni">Mediální oddělení</a><br />
+<a href="/kontakty/?p=kolektivni-sprava">Kolektivní správa</a><br />
+<a href="/kontakty/?p=ostatni">Ostatní</a>
+<br /><br /><br />
+</div>
+</div>
+</div>
+</div>-->
+<!--/FOOTER-->
+
+</div>
+
+<!-- Javascripts-->
+<!--    <script src="https://code.jquery.com/jquery.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/templates/dilia/javascript/bootstrap.min.js"></script>
+<script src="/templates/dilia/javascript/retina.min.js"></script>
+<script src="/templates/dilia/javascript/application.js"></script>
+
+
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-77026433-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

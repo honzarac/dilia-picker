@@ -17,7 +17,7 @@ class DiliaParser
     public function parseSynapsePageToSynopseEntity(string $html): array
     {
         $dom = new Dom();
-        $dom->load($html);
+        $dom->loadStr($html);
 
         $synopsies = [];
         foreach ($dom->find('.synopsis-thumb') as $synopsisThumb) {

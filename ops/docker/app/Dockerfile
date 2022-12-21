@@ -26,6 +26,8 @@ RUN apk add --no-cache \
   php8-xmlreader \
   supervisor
 
+RUN apk add php8-pecl-couchbase
+
 # Create symlink so programs depending on `php` still function
 #RUN ln -s /usr/bin/php8 /usr/bin/php
 
